@@ -1,0 +1,144 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9fc; /* Lighter background color */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for Login Form */
+.login-container {
+    width: 520px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.login-container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #222;
+    font-weight: 500;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #555;
+}
+
+/* Input and Select Fields */
+input, select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    font-size: 20px;
+    transition: border 0.3s ease;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Password Input Field with Toggle */
+.password-container {
+    position: relative;
+}
+
+#password {
+    padding-right: 48px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+    color: #0056b3;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0056b3;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+    background-color: #004494;
+    box-shadow: 0 4px 10px rgba(0, 85, 179, 0.2);
+}
+
+/* Helper Text */
+small {
+    color: #aaa;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Output Message Styling */
+#message {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #eaf5ff;
+    border-left: 4px solid #007bff;
+    font-size: 20px;
+    color: #333;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Error Message Styling */
+.error-message {
+    color: #d9534f;
+    font-size: 18px;
+    margin-top: 8px;
+    display: none; /* Hidden by default */
+}
+
+/* Optional Animation for Input Focus */
+input:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login Page</h1>
+        <div id="formError" class="error-message" style="display: none;"></div>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <small id="usernameError" class="error-message"></small>
+
+            <label for="password">Password:</label>
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <i class="fas fa-eye toggle-password" id="togglePassword"></i>
+            </div>
+            <small id="passwordError" class="error-message"></small>
+
+            <div class="form-group">
+                <label for="activityType">Role</label>
+                <select id="activityType" name="activityType" required>
+                    <option value="" disabled selected>Select your role</option>
+                    <option value="Student">Student</option>
+                    <option value="Teacher">Teacher</option>
+                </select>
+            </div>
+            <small id="roleError" class="error-message"></small>
+
+            <div class="btn">
+                <button type="button" id="loginBtn" onclick="submitLogin()" disabled>Login</button>
+            </div>
+        </form>
+        <div class="HiofOutput">
+            <div id="message"></div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
